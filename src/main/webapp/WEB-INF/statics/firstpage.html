@@ -21,11 +21,13 @@
                    $('#iframe').attr("src","index.html");
                })
             }
-            function setSrcToIframe(url) {
-                alert('salam');
-                $(document).ready(function () {
-                    $('#iframe').attr("src",url);
-                })
+            function setSrcToIframe(pageName) {
+                    $.ajax({url:'/coding_war_exploded/pages/'+pageName,
+                        type :'POST',
+                    success : function (data){
+                        $('#iframe').contents().find('body').empty();
+                        $('#iframe').attr('srcdoc',data);
+                    }});
             }
         </script>
 
@@ -415,7 +417,7 @@
                                                 <ul>
                                                     <li><a href="#" ><i class="fa fa-caret-right"></i>مفاهیم پایه</a>
                                                         <ul>
-                                                            <li><a href="#" onclick="setSrcToIframe('dictionary.jsp')" ><i class="fa fa-envelope-o"></i>فرهنگ اسامی</a></li>
+                                                            <li><a href="#" onclick="setSrcToIframe('dictionary')" ><i class="fa fa-envelope-o"></i>فرهنگ اسامی</a></li>
                                                             <li><a href="#"><i class="fa fa-caret-right"></i>مستندات</a></li>
                                                             <li><a href="property.html"><i class="fa fa-caret-right"></i>مشخصه</a></li>
                                                             <li><a href="counting-unit.html" ><i class="fa fa-envelope-o"></i>واحد شمارش</a></li>
