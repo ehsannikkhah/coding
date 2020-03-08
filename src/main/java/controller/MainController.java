@@ -11,7 +11,7 @@ public class MainController {
 
     @GetMapping(value = "/home/")
     public String firstPage(){
-        return "redirect:/statics/firstpage.html";
+        return "redirect:/resources/statics/firstpage.html";
     }
 
     @PostMapping(value = "/pages/{name}")
