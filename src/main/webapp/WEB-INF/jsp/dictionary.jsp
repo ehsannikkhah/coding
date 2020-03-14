@@ -6,14 +6,16 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<link rel="stylesheet" type="text/css" href="/../../coding_war_exploded/resources/assets/css/vendor/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="/../../coding_war_exploded/resources/assets/css/vendor/animate.css">
-<link rel="stylesheet" type="text/css" href="/../../coding_war_exploded/resources/assets/css/vendor/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="/../../coding_war_exploded/resources/assets/js/vendor/animsition/css/animsition.min.css">
-<link rel="stylesheet" type="text/css" href="/../../coding_war_exploded/resources/assets/js/vendor/datetimepicker/css/bootstrap-datetimepicker.min.css">
-<link rel="stylesheet" type="text/css" href="/../../coding_war_exploded/resources/assets/js/vendor/daterangepicker/daterangepicker-bs3.css">
-<link rel="stylesheet" type="text/css" href="/../../coding_war_exploded/resources/assets/css/main.css">
-<script src="/../../coding_war_exploded/resources/assets/js/vendor/modernizr/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../../resources/assets/fonts/fonts.css">
+<link rel="stylesheet" type="text/css" href="../../resources/assets/css/vendor/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="../../resources/assets/css/vendor/animate.css">
+<link rel="stylesheet" type="text/css" href="../../resources/assets/css/vendor/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="../../resources/assets/css/vendor/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="../../resources/assets/js/vendor/animsition/css/animsition.min.css">
+<link rel="stylesheet" type="text/css" href="../../resources/assets/js/vendor/datetimepicker/css/bootstrap-datetimepicker.min.css">
+<link rel="stylesheet" type="text/css" href="../../resources/assets/js/vendor/daterangepicker/daterangepicker-bs3.css">
+<link rel="stylesheet" type="text/css" href="../../resources/assets/css/main.css">
+<script src="../../resources/assets/js/vendor/modernizr/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 <html>
 <head>
     <title>first Page</title>
@@ -23,28 +25,42 @@
 
     <section id="content">
 
-        <div class="page page-ui-grid">
+        <div class="page">
 
-            <div class="pageheader">
+            <div class="col-md-12" style="margin: 0px;padding: 0px">
 
-                <h2 style="color: #0a6aa1">فرهنگ اسامی</h2>
+                <section class="tile">
 
-                <div class="page-bar">
+                    <div class="tile-header dvd dvd-btm">
 
-                    <ul class="page-breadcrumb">
-                        <li>
-                            <a href="firstpage.html"><i class="fa fa-home"></i> سماپل</a>
-                        </li>
-                        <li>
-                            <a href="#">مفاهیم پایه</a>
-                        </li>
-                        <li>
-                            <a role="button" onclick="setSrcToIframe('dictionary')">فرهنگ اسامی</a>
-                        </li>
-                    </ul>
+                        <a role="button" tabindex="0" class="tile-toggle">
+                            <i class="fa fa-search"></i>
+                        </a>
 
-                </div>
+                        <h2 class="pull-right" style="font-family: Sahel">فرهنگ اسامی</h2>
 
+                    </div>
+
+                    <div class="tile-body">
+
+                        <form role="form">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            </div>
+                            <label class="checkbox checkbox-custom">
+                                <input type="checkbox" checked disabled><i></i>
+                                Check me out
+                            </label>
+                            <button type="submit" class="btn btn-rounded btn-success btn-sm">Submit</button>
+                        </form>
+
+                    </div>
+                </section>
             </div>
 
             <div class="row">
